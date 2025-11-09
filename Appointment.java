@@ -1,9 +1,8 @@
 public class Appointment {
-    public String patientName;
-    public String mobilePhone;
-    private String timeSlot;
-    private HealthProfessional doctor;
-
+    public String patientName;// Patient's Name
+    public String mobilePhone;// Patient's mobile phone number
+    private String timeSlot;//Reserve a time slot
+    private HealthProfessional doctor;//The scheduled doctor
     public Appointment() {
     }
 
@@ -14,6 +13,7 @@ public class Appointment {
         this.doctor = doctor;
     }
 
+    // Method for printing appointment details
     public void printDetails() {
         System.out.println("Patient Name: " + patientName + ", Mobile Phone: " + mobilePhone +
                 ", Time Slot: " + timeSlot + ", Doctor: " + doctor.name);
