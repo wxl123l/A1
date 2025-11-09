@@ -35,6 +35,7 @@ public class AssignmentOne {
         System.out.println("------------------------------");
     }
 
+    // Method for creating an appointment
     public static void createAppointment(ArrayList<Appointment> appointments, String patientName,
                                          String mobilePhone, String timeSlot, HealthProfessional doctor) {
         Appointment newAppointment = new Appointment(patientName, mobilePhone, timeSlot, doctor);
@@ -42,6 +43,7 @@ public class AssignmentOne {
         System.out.println("Appointment created for: " + patientName);
     }
 
+    // Method for printing existing reservations
     public static void printExistingAppointments(ArrayList<Appointment> appointments) {
         if (appointments.isEmpty()) {
             System.out.println("No existing appointments.");
@@ -53,6 +55,7 @@ public class AssignmentOne {
         }
     }
 
+    // Method for Canceling an Appointment
     public static void cancelBooking(ArrayList<Appointment> appointments, String mobilePhone) {
         boolean found = false;
         for (int i = 0; i < appointments.size(); i++) {
